@@ -6,6 +6,11 @@
     height: 100%;
     
 }
+
+.card:hover {
+    background-color: rgb(216, 205, 205);
+    cursor: pointer;
+  }
 .cardHeader{
     font-weight: bold;
 }
