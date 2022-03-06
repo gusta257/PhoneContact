@@ -1,6 +1,13 @@
+
+.wrap{
+    display: block;
+    padding-top: 10px;
+}
+
 section.people{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
@@ -8,3 +15,4 @@ section.people{
     margin-right: 20px;
 
 }
+

@@ -13,7 +13,7 @@ export class PeopleComponent implements OnInit {
 
   people!: Person[];
   filterpost = '';
-  SortbyParam = '';
+  SortbyParam = 'id';
   SortDirection = 'asc';
 
   constructor(

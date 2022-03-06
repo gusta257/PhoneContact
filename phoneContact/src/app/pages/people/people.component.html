@@ -1,20 +1,29 @@
-<div class="input-wrap">
+<div class="wrap">
+
     <mat-form-field appearance="outline" class="input-search">
         <input 
         matInput 
-        placeholder="Escriba para filtrar"
+        placeholder="Filter contact name: "
         [(ngModel)]="filterpost"  
         name = "filterpost">
     </mat-form-field>
-    <select [(ngModel)]="SortbyParam">
-        <option value="name">
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Sort By:</mat-label>
+        <mat-select [(ngModel)]="SortbyParam"  >
+            <mat-option value="name">
             Name
-        </option>
-        <option value="id">
-            Id
-        </option>
-    </select>
-    <button type="button" (click)="onSortDirection()">Sort</button>
+            </mat-option>
+            <mat-option value="id">
+                Id
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+    <button mat-raised-button color="primary" class="sort" type="button" (click)="onSortDirection()">
+        <mat-icon>sort_by_alpha</mat-icon>
+    </button>
 
 </div>
 
