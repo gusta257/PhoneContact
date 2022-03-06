@@ -1,0 +1,4 @@
+<section class="people">  
+    <app-person (infoClick)="sendInfo($event)" 
+    [person]="person" *ngFor="let person of people"></app-person>
+</section>
