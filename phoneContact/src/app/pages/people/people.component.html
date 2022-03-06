@@ -8,23 +8,24 @@
         name = "filterpost">
     </mat-form-field>
     
-    <mat-form-field appearance="fill">
-        <mat-label>Sort By:</mat-label>
-        <mat-select [(ngModel)]="SortbyParam"  >
-            <mat-option value="name">
-            Name
-            </mat-option>
-            <mat-option value="id">
-                Id
-            </mat-option>
-        </mat-select>
-    </mat-form-field>
+    <div class="helpers">
+        <mat-form-field appearance="fill">
+            <mat-label>Sort By:</mat-label>
+            <mat-select [(ngModel)]="SortbyParam"  >
+                <mat-option value="name">
+                Name
+                </mat-option>
+                <mat-option value="id">
+                    Id
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
 
+        <button mat-raised-button color="primary" class="sort" type="button" (click)="onSortDirection()">
+            <mat-icon>sort_by_alpha</mat-icon>
+        </button>
 
-    <button mat-raised-button color="primary" class="sort" type="button" (click)="onSortDirection()">
-        <mat-icon>sort_by_alpha</mat-icon>
-    </button>
-
+    </div>
 </div>
 
 <section class="people">  
