@@ -30,17 +30,17 @@ export class PeopleComponent implements OnInit {
   }
 
   sendInfo(person: Person): void{
-    console.log("Desde people", person);
+    //console.log("Desde people", person);
     this.infoService.updateInfo(person);
     
   }
 
   onSortDirection(){
     if(this.SortDirection === 'desc'){
-      console.log("pasando a asc")
+     // console.log("pasando a asc")
       this.SortDirection = 'asc';
     }else{
-      console.log("pasando a desc")
+    // console.log("pasando a desc")
       this.SortDirection = 'desc';
     }
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { InfoService } from 'src/app/shared/services/info.service';
 @Component({
   selector: 'app-information',
@@ -11,9 +12,14 @@ export class InformationComponent implements OnInit {
 
   constructor(
     private infoService: InfoService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
+  }
+  onClick(): void {
+    
+    this.router.navigate(['/people']);
   }
 
 }

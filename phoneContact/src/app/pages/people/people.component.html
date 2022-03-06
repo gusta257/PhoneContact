@@ -1,15 +1,17 @@
 <div class="wrap">
-
-    <mat-form-field appearance="outline" class="input-search">
-        <input 
-        matInput 
-        placeholder="Filter contact name: "
-        [(ngModel)]="filterpost"  
-        name = "filterpost">
-    </mat-form-field>
+    <div class="input">
+        <mat-form-field appearance="outline" class="input-search">
+            <input 
+            matInput 
+            placeholder="Contact name: "
+            [(ngModel)]="filterpost"  
+            name = "filterpost">
+        </mat-form-field>
+    </div>
+    
     
     <div class="helpers">
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" class="field">
             <mat-label>Sort By:</mat-label>
             <mat-select [(ngModel)]="SortbyParam"  >
                 <mat-option value="name">
@@ -22,7 +24,7 @@
         </mat-form-field>
 
         <button mat-raised-button color="primary" class="sort" type="button" (click)="onSortDirection()">
-            <mat-icon>sort_by_alpha</mat-icon>
+            Sort: <mat-icon>sort_by_alpha</mat-icon>
         </button>
 
     </div>

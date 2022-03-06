@@ -9,9 +9,7 @@ import { Pipe, PipeTransform } from "@angular/core";
         const sortfField = arg[0];
         const direction = arg[1];
         let multi = 1;
-        console.log("value es",value)
-        console.log("arg es",arg
-        )
+    
         if(value == 0){
             return value
         }
@@ -20,7 +18,7 @@ import { Pipe, PipeTransform } from "@angular/core";
         }
 
         value.sort((a: any, b: any) => {
-            console.log("Comparando",a[sortfField],"con",b[sortfField])
+            
             if(a[sortfField] < b[sortfField] ){
                 return -1 * multi;
             }
