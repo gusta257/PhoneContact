@@ -7,6 +7,7 @@
 }
 .input{
     padding-left: 2%;
+    width: 400px;
 }
 .input-search{
     height: auto;
@@ -39,6 +40,10 @@ section.people{
         padding-top: 1%;
         padding-left: 5%;
         justify-content: center;
+    }
+    .input{
+        display: block;
+        width: 350px;
     }
   }
 
