@@ -21,7 +21,7 @@ export class PersonComponent implements OnInit {
   onClick(): void {
     console.log("Info", this.person);
     this.infoClick.emit(this.person);
-    //this.router.navigate(['/information']);
+    this.router.navigate(['/information']);
   }
 
 }

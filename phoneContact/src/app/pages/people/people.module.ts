@@ -5,8 +5,8 @@ import { PeopleRoutingModule } from './people-routing.module';
 import { PeopleComponent } from './people.component';
 import { PersonComponent } from './person/person.component';
 import { MaterialModule } from './../../material.module';
-//import { FilterPipe } from 'src/app/shared/pipes/filter.pipe';
-//import { SortPipe } from 'src/app/shared/pipes/sort.pipe';
+import { FilterPipe } from 'src/app/shared/pipes/filter.pipe';
+import { SortPipe } from 'src/app/shared/pipes/sort.pipe';
 
 
 
@@ -14,8 +14,8 @@ import { MaterialModule } from './../../material.module';
   declarations: [
     PeopleComponent,
     PersonComponent,
-
-    
+    FilterPipe,
+    SortPipe
     
   ],
   imports: [

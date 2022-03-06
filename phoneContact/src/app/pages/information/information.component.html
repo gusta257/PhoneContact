@@ -1,0 +1,14 @@
+
+
+<mat-card class="card" *ngFor="let person of info$ | async">
+    <mat-card-header class="cardHeader">
+        {{person.id}}: {{person.name}} / {{person.username}}
+    </mat-card-header>
+    <mat-card-content >
+        Phone: {{person.phone}}
+        <br>
+        Email: {{person.email}}
+        <br>
+        Website: {{person.website}}
+    </mat-card-content>
+</mat-card>

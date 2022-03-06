@@ -1,4 +1,24 @@
+<div class="input-wrap">
+    <mat-form-field appearance="outline" class="input-search">
+        <input 
+        matInput 
+        placeholder="Escriba para filtrar"
+        [(ngModel)]="filterpost"  
+        name = "filterpost">
+    </mat-form-field>
+    <select [(ngModel)]="SortbyParam">
+        <option value="name">
+            Name
+        </option>
+        <option value="id">
+            Id
+        </option>
+    </select>
+    <button type="button" (click)="onSortDirection()">Sort</button>
+
+</div>
+
 <section class="people">  
     <app-person (infoClick)="sendInfo($event)" 
-    [person]="person" *ngFor="let person of people"></app-person>
+    [person]="person" *ngFor="let person of people | filter: filterpost | sort: [SortbyParam, SortDirection]"></app-person>
 </section>
